@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .family{
+            width: 90%;
+            height: 100%;
+            margin: auto;
+        }
+        .father{
+            width: 100%;
+            height: 400px;
+        }
+        .father .img{
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-image:url(./1.png) ;
+            border-radius: 10px;
+        }
+        .mother{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .mother .son{
+            width: 32.3333333%;
+            /* padding: 5px; */
+            border-radius: 20px;
+            /* border: 1px solid; */
+            margin: auto;
+            /* background-color: grey; */
+            /* box-shadow: 2px 2px 2px ; */
+        }
+        .mother .son .wife{
+            width: 100%;
+            height: 250px;
+            
+        }
+        .wife img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .box{
+            padding-left: 5px;
+        }
+        @media only screen and (min-width:500px) and (max-width:800px){
+            .family{
+            width: 100%;
+        }
+            .mother .son{
+                display: flex;
+                width: 100%;
+                padding: 5px;
+            }
+            .mother .son .wife{
+            width: 50%;
+            
+        }
+        .box{
+            width: 50%;
+        }
+
+
+        }
+        @media only screen and (max-width:499px){
+            .family{
+            width: 100%;
+        }
+        .mother .son{
+                width: 100%;    
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="family">
+        <div class="father">
+            <div class="img"></div>
+            <!-- <img src="" alt=""> -->
+        </div>
+        <div class="mother">
+            <div class="son">
+                <div class="wife"><img src="2.jpg" alt=""></div>
+                <div class="box"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veniam tempora similique blanditiis quo. Blanditiis nemo quibusdam libero esse obcaecati aut beatae ut nulla facilis natus. Numquam cum porro qui nesciunt voluptas error molestias velit fugit consectetur dignissimos. Ratione officia libero inventore, quo delectus quod magni error voluptate. Corporis tempore officia aspernatur beatae odit dolore earum, minus iure mollitia esse consectetur vel totam</p></div>
+            </div>
+            <div class="son">
+                <div class="wife"><img src="2.jpg" alt=""></div>
+                <div class="box"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veniam tempora similique blanditiis quo. Blanditiis nemo quibusdam libero esse obcaecati aut beatae ut nulla facilis natus. Numquam cum porro qui nesciunt voluptas error molestias velit fugit consectetur dignissimos. Ratione officia libero inventore, quo delectus quod magni error voluptate. Corporis tempore officia aspernatur beatae odit dolore earum, minus iure mollitia esse consectetur vel totam</p></div>
+            </div>
+            <div class="son">
+                <div class="wife"><img src="2.jpg" alt=""></div>
+                <div class="box"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veniam tempora similique blanditiis quo. Blanditiis nemo quibusdam libero esse obcaecati aut beatae ut nulla facilis natus. Numquam cum porro qui nesciunt voluptas error molestias velit fugit consectetur dignissimos. Ratione officia libero inventore, quo delectus quod magni error voluptate. Corporis tempore officia aspernatur beatae odit dolore earum, minus iure mollitia esse consectetur vel totam</p></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
